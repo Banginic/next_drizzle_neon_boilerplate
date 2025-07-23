@@ -136,10 +136,10 @@ function Login() {
       </div>
       {formState !== "Login" && (
         <div className="mb-4">
-          <label htmlFor="name" className="block text-start mb-1.5">
+          <label htmlFor="name" className="block text-start mb-1.5 text-neutral-400">
             Full Name{" "}
           </label>
-          <div className="border rounded-lg py-3 flex items-center px-4 gap-2 border-pink-50/50 ">
+          <div className="border rounded-lg py-2 flex items-center px-4 gap-2 border-pink-50/50 ">
             <Image src={person} width={25} alt=".placeholder.png" />{" "}
             <input
               type="text"
@@ -158,10 +158,10 @@ function Login() {
         </div>
       )}
       <div className="mb-4">
-        <label htmlFor="email" className="block text-start text-sm mb-1.5">
+        <label htmlFor="email" className="block text-start text-sm mb-1.5 text-neutral-400">
           Email{" "}
         </label>
-        <div className="border rounded-lg py-3 flex items-center px-4 gap-2 border-pink-50/50">
+        <div className="border rounded-lg py-2 flex items-center px-4 gap-2 border-pink-50/50">
           <Image src={email} width={25} alt="" />
           <input
             type="text"
@@ -180,10 +180,10 @@ function Login() {
       </div>
       {formState !== "Login" && (
         <div className="mb-4">
-          <label htmlFor="phone" className="block text-start text-sm mb-1.5">
+          <label htmlFor="phone" className="block text-start text-sm mb-1.5 text-neutral-400">
             Phone{" "}
           </label>
-          <div className="border rounded-lg py-3 flex items-center px-4 gap-2 border-pink-50/50">
+          <div className="border rounded-lg py-2 flex items-center px-4 gap-2 border-pink-50/50">
             <Image src={call} width={25} alt="" />
             <input
               type="tell"
@@ -202,10 +202,10 @@ function Login() {
         </div>
       )}
       <div className={`${formState === "Login" ? "mb-4" : "mb-6"}`}>
-        <label htmlFor="password" className="block text-start text-sm mb-1">
+        <label htmlFor="password" className="block text-start text-sm mb-1 text-neutral-400">
           Password
         </label>
-        <div className="relative border rounded-lg py-3 flex items-center px-4 gap-2 border-pink-50/50">
+        <div className="relative border rounded-lg py-2 flex items-center px-4 gap-2 border-pink-50/50">
           <Image src={lock} width={25} alt="" />
           <input
             type={viewPassword}
