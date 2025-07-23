@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import { Logo } from "@/components/exportComp";
+import { Logo, MainSidebar  } from "@/components/exportComp";
 import Link from "next/link";
 import { Hamburger, NavLinks } from "@/components/exportComp";
 import { AppContext } from "@/context/AppProvider";
@@ -30,6 +30,11 @@ function MainNavbar() {
           setSidebar={setMainSidebar}
         />
       </nav>
+      <MainSidebar
+      isSidebarOpen={mainSidebar}
+      setSidebar={setMainSidebar}
+      navlinks={mainNavlinks}
+      />
     </header>
   );
 }

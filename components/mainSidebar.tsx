@@ -8,7 +8,7 @@ import Image from "next/image";
 import { close_menu } from "@/assets/photos";
 import { usePathname } from "next/navigation";
 
-function Sidebar({
+function MainSidebar({
   isSidebarOpen,
   setSidebar,
   navlinks,
@@ -62,4 +62,4 @@ function Sidebar({
   );
 }
 
-export default Sidebar;
+export default MainSidebar;
