@@ -127,7 +127,7 @@ function Login() {
   return (
     <form
       onSubmit={handlerFormSubmit}
-      className="bg-black/40 backdrop:blur-md  p-8 rounded-lg 
+      className="bg-black/40 backdrop:blur-md mt-8 p-8 rounded-lg 
       w-sm mb-8 border-gray-300 dark:border-gray-800 mx-auto shadow-accent/20 shadow-lg"
     >
       <div className="text-start mb-5 ">
@@ -223,7 +223,7 @@ function Login() {
           />
           <span
             onClick={togglePassword}
-            className="absolute right-3 top-3.5 lg:top-2 cursor-pointer "
+            className="absolute right-3 top-4 lg:top-2 cursor-pointer "
           >
             {passwordIcon}
           </span>
@@ -256,7 +256,7 @@ function Login() {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full disabled:bg-accent/50 cursor-pointer bg-accent hover:opacity-80 text-white text-lg font-semibold rounded-lg py-2.5 bg-gradient-to-br from-pink-400 via-purple-400 to-pink-400 mb-2"
+        className="w-full disabled:bg-accent/50 cursor-pointer bg-accent hover:opacity-80 text-white text-lg font-semibold rounded-lg py-2 bg-gradient-to-br from-pink-400 via-purple-400 to-pink-400 mb-2"
       >
         {isLoading ? "Loding..." : formState}
       </button>
@@ -277,7 +277,7 @@ function Login() {
           onClick={toggleFormState}
           className="text-sm flex items-center justify-center gap-2 mt-2"
         >
-          <span>Don't have an account?</span>
+          <span className="text-neutral-400">Don't have an account?</span>
           <span className="text-accent  text-sm font-medium cursor-pointer hover:text-indigo-900 hover:underline">
             Sign up
           </span>
@@ -285,10 +285,10 @@ function Login() {
       ) : (
         <p
           onClick={toggleFormState}
-          className="text-xs flex items-center justify-center gap-2 mt-2"
+          className="flex items-center text-sm justify-center gap-2 mt-2"
         >
-          <span>Already have an account?</span>
-          <span className="text-accent   text-[16px ] cursor-pointer hover:text-indigo-900 hover:underline">
+          <span className="text-neutral-400">Already have an account?</span>
+          <span className="text-accent cursor-pointer hover:text-indigo-900 hover:underline">
             Login
           </span>
         </p>
