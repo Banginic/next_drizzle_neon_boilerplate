@@ -1,5 +1,5 @@
 export const metaData = {
-    title: '',
+    title: 'BANGINIC',
     email: '',
     phone: '',
     address: ''
